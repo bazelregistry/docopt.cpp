@@ -1,0 +1,13 @@
+cc_library(
+  name = "docopt",
+  hdrs = [
+    "docopt.h",
+    "docopt_value.h",
+  ],
+  srcs = [
+    "docopt_private.h",
+    "docopt_util.h",
+    "docopt.cpp",
+  ],
+  visibility = ["//visibility:public"],
+)
