@@ -1,0 +1,7 @@
+version: "1"
+rules:
+- base: main
+  upstream: docopt:docopt.cpp
+  mergeMethod: merge
+  conflictReviewers:
+  - zaucy
