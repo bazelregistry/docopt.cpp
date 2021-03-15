@@ -1,26 +1,16 @@
 load("@rules_cc//cc:defs.bzl", "cc_library")
 
-config_setting(
-    name = "msvc_compiler",
-    flag_values = {
-        "@bazel_tools//tools/cpp:compiler": "msvc-cl",
-    },
-)
-
 cc_library(
     name = "docopt",
     visibility = ["//visibility:public"],
-    copts = select({
-      ":msvc_compiler": ["/w"],
-      "//conditions:default": ["-w"],
-    }),
     hdrs = [  
         "docopt.h",
         "docopt_value.h",
+        "docopt_util.h",
     ],
     srcs = [
+        "docopt.h",
         "docopt_private.h",
-        "docopt_util.h",
         "docopt.cpp",
     ],
 )
