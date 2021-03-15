@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Jared Grubb. All rights reserved.
 //
 
-#ifndef docopt_docopt_util_h
-#define docopt_docopt_util_h
+#ifndef DOCOPT_UTIL_H
+#define DOCOPT_UTIL_H
 
 #if DOCTOPT_USE_BOOST_REGEX
 #include <boost/regex.hpp>
@@ -119,4 +119,4 @@ namespace docopt {
 	}
 }
 
-#endif
+#endif /* defined(DOCOPT_UTIL_H) */

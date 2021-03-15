@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Jared Grubb. All rights reserved.
 //
 
-#ifndef docopt_docopt_private_h
-#define docopt_docopt_private_h
+#ifndef DOCOPT_PRIVATE_H
+#define DOCOPT_PRIVATE_H
 
 #include <vector>
 #include <memory>
@@ -673,4 +673,4 @@ namespace docopt {
 
 }
 
-#endif
+#endif /* defined(DOCOPT_PRIVATE_H) */

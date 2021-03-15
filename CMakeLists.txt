@@ -23,7 +23,7 @@ endif()
 #============================================================================
 # Sources & headers
 #============================================================================
-set(docopt_SOURCES docopt.cpp)
+set(docopt_SOURCES docopt.cpp docopt_value.cpp)
 set(docopt_HEADERS
 		docopt.h
 		docopt_private.h

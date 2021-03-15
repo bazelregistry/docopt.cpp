@@ -7,10 +7,11 @@ cc_library(
         "docopt.h",
         "docopt_value.h",
         "docopt_util.h",
+        "docopt_config.h",
     ],
     srcs = [
-        "docopt.h",
         "docopt_private.h",
         "docopt.cpp",
+        "docopt_value.cpp",
     ],
 )
